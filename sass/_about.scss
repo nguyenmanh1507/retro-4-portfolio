@@ -1,0 +1,62 @@
+// About Me styles
+#about-me {
+	background-color: $color-about;
+	@include box-shadow(0 0.1rem 0.2rem rgba($black, 0.5));
+	z-index: 4;
+}
+
+.hobbit-detail {
+	text-align: center;
+
+	.circle {
+		background-color: $tomato;
+		display: inline-block;
+		height: 14.2rem;
+		width: 14.2rem;
+		margin: 0 auto 2.5rem;
+		border-radius: 50%;
+		line-height: 14.2rem;
+
+		border: 0.4rem solid $color-text-light;
+		@include box-shadow(0 0 0 0.4rem $tomato);
+	}
+
+	.hobbit-desc {
+
+		.hobbit-name {
+			font-family: $font-family-extra-2;
+			font-size: 2.7rem;
+			text-transform: uppercase;
+			margin-bottom: 1.8rem;
+		}
+
+		.hobbit-name-short-desc {
+			text-transform: uppercase;
+			font-size: 1.9rem;
+			padding-bottom: 1.7rem;
+			position: relative;
+			margin-bottom: 1.5rem;
+
+			&:after {
+				content: '';
+				background-color: $text-color;
+				height: 0.2rem;
+				width: 4rem;
+				position: absolute;
+				top: 100%;
+				left: 50%;
+				margin-left: -2rem;
+			}
+		}
+
+		.hobbit-name-desc {
+			font-size: 1.4rem;
+			text-align: left;
+			line-height: 1.7em;
+
+			em, strong {
+				font-weight: bold;
+			}
+		}
+	}
+}

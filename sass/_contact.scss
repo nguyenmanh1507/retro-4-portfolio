@@ -1,0 +1,22 @@
+// Contact styles
+#contact-me {
+	background: $color-contact url('../img/asfalt-light.png') left top;
+
+	.section-title,
+	.xxx-hr,
+	.section-title-short-desc {
+		color: $color-text-light;
+	}
+
+	.xxx-hr:before,
+	.xxx-hr:after {
+		background-color: $color-text-light;
+	}
+
+	.section-title {
+		text-shadow: 0.2rem 0.2rem 0 $color-text,
+								 0.4rem 0.4rem 0 $color-text-light;
+						 
+	}
+}
+

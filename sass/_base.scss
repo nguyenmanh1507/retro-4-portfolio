@@ -1,0 +1,110 @@
+// Colors
+$color-nav:  #7ac0c0;
+$color-header: #78bbbb;
+$color-about: #e6e1d0;
+$color-portfolio: #e68966;
+$color-blog: #e3e0dd;
+$color-contact: #4c5057;
+
+$black: #000000;
+$white: #FFFFFF;
+$tomato: #d45244;
+
+$color-text: #383a3c;
+$color-text-light: #f6edd8;
+
+$color-ribbon-bg: #fff1ce;
+
+// Fonts
+
+// Roboto Slab
+@font-face {
+    font-family: 'roboto_slabbold';
+    src: url('../fonts/webfont/RobotoSlab-Bold-webfont.eot');
+    src: url('../fonts/webfont/RobotoSlab-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfont/RobotoSlab-Bold-webfont.woff') format('woff'),
+         url('../fonts/webfont/RobotoSlab-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/webfont/RobotoSlab-Bold-webfont.svg#roboto_slabbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto_slabregular';
+    src: url('../fonts/webfont/RobotoSlab-Regular-webfont.eot');
+    src: url('../fonts/webfont/RobotoSlab-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfont/RobotoSlab-Regular-webfont.woff') format('woff'),
+         url('../fonts/webfont/RobotoSlab-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/webfont/RobotoSlab-Regular-webfont.svg#roboto_slabregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+// SesideResort
+@font-face {
+    font-family: 'seasideresortnfregular';
+    src: url('../fonts/webfont/SEASRN__-webfont.eot');
+    src: url('../fonts/webfont/SEASRN__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfont/SEASRN__-webfont.woff') format('woff'),
+         url('../fonts/webfont/SEASRN__-webfont.ttf') format('truetype'),
+         url('../fonts/webfont/SEASRN__-webfont.svg#seasideresortnfregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+// Oswaldbold
+@font-face {
+    font-family: 'oswaldbold';
+    src: url('../fonts/webfont/Oswald-Bold-webfont.eot');
+    src: url('../fonts/webfont/Oswald-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfont/Oswald-Bold-webfont.woff2') format('woff2'),
+         url('../fonts/webfont/Oswald-Bold-webfont.woff') format('woff'),
+         url('../fonts/webfont/Oswald-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/webfont/Oswald-Bold-webfont.svg#oswaldbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'oswald_regularregular';
+    src: url('../fonts/webfont/Oswald-Regular-webfont.eot');
+    src: url('../fonts/webfont/Oswald-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfont/Oswald-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/webfont/Oswald-Regular-webfont.woff') format('woff'),
+         url('../fonts/webfont/Oswald-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/webfont/Oswald-Regular-webfont.svg#oswald_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+// Bazar
+@font-face {
+    font-family: 'bazarmedium';
+    src: url('../fonts/webfont/Bazar-webfont.eot');
+    src: url('../fonts/webfont/Bazar-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfont/Bazar-webfont.woff2') format('woff2'),
+         url('../fonts/webfont/Bazar-webfont.woff') format('woff'),
+         url('../fonts/webfont/Bazar-webfont.ttf') format('truetype'),
+         url('../fonts/webfont/Bazar-webfont.svg#bazarmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+// Font family
+$font-family-primary: 'roboto_slabregular', serif;
+$font-family-secondary: 'oswald_regularregular', serif;
+$font-family-extra-1: 'seasideresortnfregular', sans-serif;
+$font-family-extra-2: 'bazarmedium', sans-serif;

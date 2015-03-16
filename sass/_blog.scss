@@ -1,0 +1,78 @@
+// My Blog styles
+#my-blog-section {
+	background-color: $color-blog;
+	@include box-shadow(0 0.1rem 0.2rem rgba($black, 0.5));
+	z-index: 3;
+}
+
+.my-blog {
+
+	.my-blog-thumbnail {
+		background-color: $color-text-light;
+		border-radius: 0.4rem;
+		@include box-shadow(0.2rem 0.2rem 0.2rem rgba(0, 0, 0, .2));
+		display: inline-block;
+		margin: 0 3rem 3rem 0;
+		float: left;
+		padding: 0.4rem;
+		min-width: 28.9rem;
+		min-height: 21.8rem;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	.my-blog-title {
+		font-size: 2.4rem;
+		font-weight: bold;
+		margin-bottom: 1rem;
+	}
+
+	.my-blog-meta {
+		margin-bottom: 1rem;
+	}
+	
+	.meta-info,
+	.comment-numbers {
+		font-family: $font-family-secondary;
+		font-weight: bold;
+		font-size: 1.4rem;
+	}
+
+	.meta-info {
+		display: inline-block;
+		padding-bottom: 1rem;
+		position: relative;
+		
+		&:after {
+			content: '';
+			width: 4rem;
+			height: 0.2rem;
+			background-color: $text-color;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+
+		li {
+			display: inline-block;
+
+			&:after {
+				content: '//';
+			}
+
+			&:last-child:after {
+				content: '';
+			}
+
+			a {
+				letter-spacing: 1px;
+			}
+		}
+	}
+
+	.comment-numbers {
+		float: right;
+	}
+}

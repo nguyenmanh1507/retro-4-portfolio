@@ -1,0 +1,99 @@
+// Portfolio styles
+#portfolios-section {
+	background-color: $color-portfolio;
+	@include box-shadow(0 0.1rem 0.2rem rgba($black, 0.5));
+	z-index: 3;
+}
+
+.filter-section {
+	margin-top: 4.4rem;
+
+	.filter-buttons {
+
+		li {
+			display: inline-block;
+			font-size: 1.6rem;
+			margin-right: 2.4rem;
+
+			.filter-button {
+				background-color: $color-text-light;
+				border-radius: 0 0.2rem 0.2rem 0;
+				display: inline-block;
+				@include box-shadow(0.1rem 0.1rem 0.1rem rgba(0, 0, 0, .2));
+				font-size: 1.4rem;
+				font-weight: bold;
+				padding: 0 0.6rem;
+				position: relative;
+
+				&:before {
+					content: '';
+					height: 0;
+					width: 0;
+					border-top: 1.2rem solid transparent;
+					border-right: 1.5rem solid $color-text-light;
+					border-bottom: 1.2rem solid transparent;
+					position: absolute;
+					right: 100%;
+					top: 0;
+				}
+
+				&:after {
+					content: '';
+					background-color: $color-text;
+					height: 0.4rem;
+					width: 0.4rem;
+					border-radius: 50%;
+					position: absolute;
+					top: 50%;
+					left: 0;
+					margin-top: -0.2rem;
+					margin-left: -0.2rem;
+				}
+			}
+		}
+	}
+}
+
+.portfolios {
+	text-align: center;
+
+	.portfolio {
+		background-color: $color-text-light;
+		border-radius: 0.4rem;
+		@include box-shadow(0.2rem 0.2rem 0.2rem rgba($black, 0.2));
+		padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+		margin-top: 2rem;
+
+		> a > img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.portfolio-name {
+		font-size: 1.6rem;
+		font-weight: bold;
+		position: relative;
+		padding-top: 3.2rem
+	}
+
+	.portfolio-type {
+		display: block;
+		color: transparent;
+		height: 4.4rem;
+		width: 4.4rem;
+		background-color: $color-text-light;
+		border-radius: 50%;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -2.2rem;
+		margin-top: -1.4rem;
+	}
+
+	.portfolio-type-photo {
+		background-image: url('../img/photo.png');
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}

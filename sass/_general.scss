@@ -1,0 +1,39 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font: 1.6rem/1.5em $font-family-primary;
+	color: $color-text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+p, figure, article {
+	margin: 0;
+}
+
+a:link, a:active, a:hover, a:visited {
+	color: $color-text;
+	outline: none;
+	text-decoration: none;
+}
+
+#about-me,
+#portfolios-section,
+#my-blog-section,
+#contact-me {
+	background: url('../img/asfalt-light.png') left top;
+	padding: 5rem 0;
+	position: relative;
+}
+

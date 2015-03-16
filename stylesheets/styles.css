@@ -8144,3 +8144,657 @@ button.close {
     display: none !important;
   }
 }
+@font-face {
+  font-family: 'roboto_slabbold';
+  src: url("../fonts/webfont/RobotoSlab-Bold-webfont.eot");
+  src: url("../fonts/webfont/RobotoSlab-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/webfont/RobotoSlab-Bold-webfont.woff") format("woff"), url("../fonts/webfont/RobotoSlab-Bold-webfont.ttf") format("truetype"), url("../fonts/webfont/RobotoSlab-Bold-webfont.svg#roboto_slabbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto_slabregular';
+  src: url("../fonts/webfont/RobotoSlab-Regular-webfont.eot");
+  src: url("../fonts/webfont/RobotoSlab-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/webfont/RobotoSlab-Regular-webfont.woff") format("woff"), url("../fonts/webfont/RobotoSlab-Regular-webfont.ttf") format("truetype"), url("../fonts/webfont/RobotoSlab-Regular-webfont.svg#roboto_slabregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'seasideresortnfregular';
+  src: url("../fonts/webfont/SEASRN__-webfont.eot");
+  src: url("../fonts/webfont/SEASRN__-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/webfont/SEASRN__-webfont.woff") format("woff"), url("../fonts/webfont/SEASRN__-webfont.ttf") format("truetype"), url("../fonts/webfont/SEASRN__-webfont.svg#seasideresortnfregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'oswaldbold';
+  src: url("../fonts/webfont/Oswald-Bold-webfont.eot");
+  src: url("../fonts/webfont/Oswald-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/webfont/Oswald-Bold-webfont.woff2") format("woff2"), url("../fonts/webfont/Oswald-Bold-webfont.woff") format("woff"), url("../fonts/webfont/Oswald-Bold-webfont.ttf") format("truetype"), url("../fonts/webfont/Oswald-Bold-webfont.svg#oswaldbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'oswald_regularregular';
+  src: url("../fonts/webfont/Oswald-Regular-webfont.eot");
+  src: url("../fonts/webfont/Oswald-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/webfont/Oswald-Regular-webfont.woff2") format("woff2"), url("../fonts/webfont/Oswald-Regular-webfont.woff") format("woff"), url("../fonts/webfont/Oswald-Regular-webfont.ttf") format("truetype"), url("../fonts/webfont/Oswald-Regular-webfont.svg#oswald_regularregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'bazarmedium';
+  src: url("../fonts/webfont/Bazar-webfont.eot");
+  src: url("../fonts/webfont/Bazar-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/webfont/Bazar-webfont.woff2") format("woff2"), url("../fonts/webfont/Bazar-webfont.woff") format("woff"), url("../fonts/webfont/Bazar-webfont.ttf") format("truetype"), url("../fonts/webfont/Bazar-webfont.svg#bazarmedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 1, ../sass/_general.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 5, ../sass/_general.scss */
+body {
+  font: 1.6rem/1.5em "roboto_slabregular", serif;
+  color: #383a3c;
+}
+
+/* line 10, ../sass/_general.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin: 0;
+}
+
+/* line 15, ../sass/_general.scss */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 21, ../sass/_general.scss */
+p, figure, article {
+  margin: 0;
+}
+
+/* line 25, ../sass/_general.scss */
+a:link, a:active, a:hover, a:visited {
+  color: #383a3c;
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 31, ../sass/_general.scss */
+#about-me,
+#portfolios-section,
+#my-blog-section,
+#contact-me {
+  background: url("../img/asfalt-light.png") left top;
+  padding: 5rem 0;
+  position: relative;
+}
+
+/* line 1, ../sass/_misc.scss */
+.dash {
+  width: 100%;
+  height: 0.4rem;
+  background: url("../img/dash.png") repeat-x center center;
+}
+
+/* line 7, ../sass/_misc.scss */
+.dash-top,
+.dash-bottom {
+  border-top: 0.1rem dashed rgba(0, 0, 0, 0.3);
+  border-bottom: 0.1rem dashed rgba(255, 255, 255, 0.3);
+  left: 0;
+  position: absolute;
+  width: 100%;
+  margin: 0;
+}
+
+/* line 17, ../sass/_misc.scss */
+.dash-top {
+  top: 0;
+  margin-top: 1rem;
+}
+
+/* line 22, ../sass/_misc.scss */
+.dash-bottom {
+  bottom: 0;
+  margin-bottom: 1rem;
+}
+
+/* line 27, ../sass/_misc.scss */
+.section-title,
+.xxx-hr,
+.section-title-short-desc {
+  text-align: center;
+}
+
+/* line 33, ../sass/_misc.scss */
+.section-title {
+  font-family: "bazarmedium", sans-serif;
+  font-size: 9rem;
+  text-transform: uppercase;
+  text-shadow: 0.2rem 0.2rem 0 #f6edd8, 0.4rem 0.4rem 0 #383a3c;
+}
+
+/* line 41, ../sass/_misc.scss */
+.xxx-hr {
+  font-size: 2.2rem;
+  position: relative;
+  width: 15rem;
+  margin: 0 auto 1rem;
+}
+/* line 47, ../sass/_misc.scss */
+.xxx-hr:before, .xxx-hr:after {
+  content: '';
+  background-color: #383a3c;
+  height: 0.2rem;
+  width: 4rem;
+  position: absolute;
+  top: 50%;
+}
+/* line 57, ../sass/_misc.scss */
+.xxx-hr:before {
+  left: 0;
+}
+/* line 61, ../sass/_misc.scss */
+.xxx-hr:after {
+  right: 0;
+}
+
+/* line 66, ../sass/_misc.scss */
+.section-title-short-desc {
+  font-family: "oswald_regularregular", serif;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 2.7rem;
+}
+
+/* line 73, ../sass/_misc.scss */
+.browse-all {
+  display: block;
+  margin: 0 auto;
+  font-family: "oswald_regularregular", serif;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin-top: 4rem;
+  text-align: center;
+  padding-top: 1rem;
+  position: relative;
+}
+/* line 85, ../sass/_misc.scss */
+.browse-all:before {
+  background-color: #383a3c;
+  content: '';
+  height: 0.2rem;
+  width: 4rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -2rem;
+}
+
+/* line 2, ../sass/_header.scss */
+#header {
+  background: url("../img/asfalt-light.png") left top, url("../img/dash.png") repeat-x left 97%, url("../img/dash.png") repeat-x left 15rem;
+  background-color: #78bbbb;
+  border-bottom: 1px dashed rgba(246, 237, 216, 0.2);
+  position: relative;
+  text-align: center;
+  min-height: 50rem;
+  padding: 17.8rem 0 5.5rem;
+  -webkit-box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+/* line 16, ../sass/_header.scss */
+.site-name {
+  color: #f6edd8;
+  font-family: "seasideresortnfregular", sans-serif;
+  font-size: 11rem;
+  margin-bottom: 2.7rem;
+  text-transform: uppercase;
+  text-shadow: 0.2rem 0.2rem 0 #383a3c;
+}
+
+/* line 25, ../sass/_header.scss */
+.site-logo {
+  text-align: center;
+  position: fixed;
+  top: 0.5rem;
+  left: 50%;
+  z-index: 20;
+  margin-left: -7.4rem;
+}
+/* line 33, ../sass/_header.scss */
+.site-logo .site-logo-title {
+  background: url("../img/logo-bg.png") no-repeat center center;
+  height: 14.8rem;
+  width: 14.8rem;
+  color: #f6edd8;
+  line-height: 14.8rem;
+  font-family: "seasideresortnfregular", sans-serif;
+  font-size: 8.4rem;
+}
+
+/* line 45, ../sass/_header.scss */
+.navbar-default {
+  background: url("../img/asfalt-light.png") left top, url("../img/dash.png") repeat-x left 90%;
+  background-color: #7ac0c0;
+  border: none;
+  -webkit-box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 57, ../sass/_header.scss */
+.navbar {
+  border-radius: 0;
+  margin-bottom: 18.5rem;
+}
+
+/* line 62, ../sass/_header.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #f6edd8;
+  font: 3.2rem "bazarmedium", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 76.8rem) {
+  /* line 62, ../sass/_header.scss */
+  .navbar-default .navbar-nav > li > a {
+    padding: 1.56em 0;
+  }
+}
+
+@media (min-width: 76.8rem) {
+  /* line 74, ../sass/_header.scss */
+  .navbar-nav {
+    float: none;
+    margin: 0 auto;
+  }
+
+  /* line 79, ../sass/_header.scss */
+  .navbar-nav > li {
+    display: inline-block;
+    float: none;
+    margin-right: 8.5rem;
+  }
+  /* line 84, ../sass/_header.scss */
+  .navbar-nav > li:last-child {
+    margin-right: 0;
+  }
+  /* line 88, ../sass/_header.scss */
+  .navbar-nav > li:nth-child(2) {
+    margin-right: 25rem;
+  }
+}
+/* line 95, ../sass/_header.scss */
+.site-ribbon {
+  min-width: 28rem;
+  max-width: 36rem;
+  position: relative;
+  text-align: center;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  background: #fff0ce;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  margin: 3rem auto;
+}
+/* line 106, ../sass/_header.scss */
+.site-ribbon:before, .site-ribbon:after {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: -1.2rem;
+  border: 2.4rem solid #FFEDC8;
+  z-index: -1;
+}
+/* line 116, ../sass/_header.scss */
+.site-ribbon:before {
+  left: -37px;
+  border-right-width: 33px;
+  border-left-color: transparent;
+  -webkit-box-shadow: 2px 2px 1px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 1px -1px rgba(0, 0, 0, 0.3);
+}
+/* line 123, ../sass/_header.scss */
+.site-ribbon:after {
+  right: -37px;
+  border-left-width: 33px;
+  border-right-color: transparent;
+  -webkit-box-shadow: -2px 2px 1px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: -2px 2px 1px -1px rgba(0, 0, 0, 0.3);
+}
+/* line 130, ../sass/_header.scss */
+.site-ribbon .site-ribbon-desc {
+  color: #4B4D4E;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  margin: 0px;
+  padding: 12px 10px 11px 10px;
+  font-size: 2.2rem;
+}
+/* line 137, ../sass/_header.scss */
+.site-ribbon .site-ribbon-desc:before, .site-ribbon .site-ribbon-desc:after {
+  border-color: #849092 transparent transparent transparent;
+  position: absolute;
+  display: block;
+  border-style: solid;
+  bottom: -12px;
+  content: '';
+}
+/* line 147, ../sass/_header.scss */
+.site-ribbon .site-ribbon-desc:before {
+  left: 0;
+  border-width: 12px 0 0 20px;
+}
+/* line 152, ../sass/_header.scss */
+.site-ribbon .site-ribbon-desc:after {
+  right: 0;
+  border-width: 12px 20px 0 0;
+}
+/* line 157, ../sass/_header.scss */
+.site-ribbon .site-ribbon-desc span:before,
+.site-ribbon .site-ribbon-desc span:after {
+  content: '';
+  border-top: 0.1rem dashed #9da0a3;
+  box-shadow: 0 0 0.2rem rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+/* line 167, ../sass/_header.scss */
+.site-ribbon .site-ribbon-desc span:before {
+  top: 0;
+  margin-top: 0.4rem;
+}
+/* line 172, ../sass/_header.scss */
+.site-ribbon .site-ribbon-desc span:after {
+  bottom: 0;
+  margin-bottom: 0.4rem;
+}
+
+/* line 180, ../sass/_header.scss */
+.welcome-message {
+  font-family: "bazarmedium", sans-serif;
+  font-size: 3.2rem;
+  color: #f6edd8;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  line-height: 1.5em;
+}
+/* line 188, ../sass/_header.scss */
+.welcome-message span {
+  display: block;
+  font-size: 2.6rem;
+}
+
+/* line 2, ../sass/_about.scss */
+#about-me {
+  background-color: #e6e1d0;
+  -webkit-box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+  z-index: 4;
+}
+
+/* line 8, ../sass/_about.scss */
+.hobbit-detail {
+  text-align: center;
+}
+/* line 11, ../sass/_about.scss */
+.hobbit-detail .circle {
+  background-color: #d45244;
+  display: inline-block;
+  height: 14.2rem;
+  width: 14.2rem;
+  margin: 0 auto 2.5rem;
+  border-radius: 50%;
+  line-height: 14.2rem;
+  border: 0.4rem solid #f6edd8;
+  -webkit-box-shadow: 0 0 0 0.4rem #d45244;
+  box-shadow: 0 0 0 0.4rem #d45244;
+}
+/* line 26, ../sass/_about.scss */
+.hobbit-detail .hobbit-desc .hobbit-name {
+  font-family: "bazarmedium", sans-serif;
+  font-size: 2.7rem;
+  text-transform: uppercase;
+  margin-bottom: 1.8rem;
+}
+/* line 33, ../sass/_about.scss */
+.hobbit-detail .hobbit-desc .hobbit-name-short-desc {
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  padding-bottom: 1.7rem;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+/* line 40, ../sass/_about.scss */
+.hobbit-detail .hobbit-desc .hobbit-name-short-desc:after {
+  content: '';
+  background-color: #333333;
+  height: 0.2rem;
+  width: 4rem;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -2rem;
+}
+/* line 52, ../sass/_about.scss */
+.hobbit-detail .hobbit-desc .hobbit-name-desc {
+  font-size: 1.4rem;
+  text-align: left;
+  line-height: 1.7em;
+}
+/* line 57, ../sass/_about.scss */
+.hobbit-detail .hobbit-desc .hobbit-name-desc em, .hobbit-detail .hobbit-desc .hobbit-name-desc strong {
+  font-weight: bold;
+}
+
+/* line 2, ../sass/_portfolio.scss */
+#portfolios-section {
+  background-color: #e68966;
+  -webkit-box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+/* line 8, ../sass/_portfolio.scss */
+.filter-section {
+  margin-top: 4.4rem;
+}
+/* line 13, ../sass/_portfolio.scss */
+.filter-section .filter-buttons li {
+  display: inline-block;
+  font-size: 1.6rem;
+  margin-right: 2.4rem;
+}
+/* line 18, ../sass/_portfolio.scss */
+.filter-section .filter-buttons li .filter-button {
+  background-color: #f6edd8;
+  border-radius: 0 0.2rem 0.2rem 0;
+  display: inline-block;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 0 0.6rem;
+  position: relative;
+}
+/* line 28, ../sass/_portfolio.scss */
+.filter-section .filter-buttons li .filter-button:before {
+  content: '';
+  height: 0;
+  width: 0;
+  border-top: 1.2rem solid transparent;
+  border-right: 1.5rem solid #f6edd8;
+  border-bottom: 1.2rem solid transparent;
+  position: absolute;
+  right: 100%;
+  top: 0;
+}
+/* line 40, ../sass/_portfolio.scss */
+.filter-section .filter-buttons li .filter-button:after {
+  content: '';
+  background-color: #383a3c;
+  height: 0.4rem;
+  width: 0.4rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -0.2rem;
+  margin-left: -0.2rem;
+}
+
+/* line 57, ../sass/_portfolio.scss */
+.portfolios {
+  text-align: center;
+}
+/* line 60, ../sass/_portfolio.scss */
+.portfolios .portfolio {
+  background-color: #f6edd8;
+  border-radius: 0.4rem;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+  margin-top: 2rem;
+}
+/* line 67, ../sass/_portfolio.scss */
+.portfolios .portfolio > a > img {
+  display: block;
+  width: 100%;
+}
+/* line 73, ../sass/_portfolio.scss */
+.portfolios .portfolio-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+  position: relative;
+  padding-top: 3.2rem;
+}
+/* line 80, ../sass/_portfolio.scss */
+.portfolios .portfolio-type {
+  display: block;
+  color: transparent;
+  height: 4.4rem;
+  width: 4.4rem;
+  background-color: #f6edd8;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -2.2rem;
+  margin-top: -1.4rem;
+}
+/* line 94, ../sass/_portfolio.scss */
+.portfolios .portfolio-type-photo {
+  background-image: url("../img/photo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 2, ../sass/_blog.scss */
+#my-blog-section {
+  background-color: #e3e0dd;
+  -webkit-box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+/* line 10, ../sass/_blog.scss */
+.my-blog .my-blog-thumbnail {
+  background-color: #f6edd8;
+  border-radius: 0.4rem;
+  -webkit-box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin: 0 3rem 3rem 0;
+  float: left;
+  padding: 0.4rem;
+  min-width: 28.9rem;
+  min-height: 21.8rem;
+}
+/* line 21, ../sass/_blog.scss */
+.my-blog .my-blog-thumbnail img {
+  max-width: 100%;
+}
+/* line 26, ../sass/_blog.scss */
+.my-blog .my-blog-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+/* line 32, ../sass/_blog.scss */
+.my-blog .my-blog-meta {
+  margin-bottom: 1rem;
+}
+/* line 36, ../sass/_blog.scss */
+.my-blog .meta-info,
+.my-blog .comment-numbers {
+  font-family: "oswald_regularregular", serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+/* line 43, ../sass/_blog.scss */
+.my-blog .meta-info {
+  display: inline-block;
+  padding-bottom: 1rem;
+  position: relative;
+}
+/* line 48, ../sass/_blog.scss */
+.my-blog .meta-info:after {
+  content: '';
+  width: 4rem;
+  height: 0.2rem;
+  background-color: #333333;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* line 58, ../sass/_blog.scss */
+.my-blog .meta-info li {
+  display: inline-block;
+}
+/* line 61, ../sass/_blog.scss */
+.my-blog .meta-info li:after {
+  content: '//';
+}
+/* line 65, ../sass/_blog.scss */
+.my-blog .meta-info li:last-child:after {
+  content: '';
+}
+/* line 69, ../sass/_blog.scss */
+.my-blog .meta-info li a {
+  letter-spacing: 1px;
+}
+/* line 75, ../sass/_blog.scss */
+.my-blog .comment-numbers {
+  float: right;
+}
+
+/* line 2, ../sass/_contact.scss */
+#contact-me {
+  background: #4c5057 url("../img/asfalt-light.png") left top;
+}
+/* line 5, ../sass/_contact.scss */
+#contact-me .section-title,
+#contact-me .xxx-hr,
+#contact-me .section-title-short-desc {
+  color: #f6edd8;
+}
+/* line 11, ../sass/_contact.scss */
+#contact-me .xxx-hr:before,
+#contact-me .xxx-hr:after {
+  background-color: #f6edd8;
+}
+/* line 16, ../sass/_contact.scss */
+#contact-me .section-title {
+  text-shadow: 0.2rem 0.2rem 0 #383a3c, 0.4rem 0.4rem 0 #f6edd8;
+}
