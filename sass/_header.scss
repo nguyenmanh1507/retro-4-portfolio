@@ -1,8 +1,6 @@
 // Header styles
 #header {
-	background: url('../img/asfalt-light.png') left top, 
-		url('../img/dash.png') repeat-x left 97%, 
-		url('../img/dash.png') repeat-x left 15rem;
+	background: url('../img/asfalt-light.png') left top;
 	background-color: $color-header;
 	border-bottom: 1px dashed rgba($color-text-light, .2);
 	position: relative;
@@ -11,6 +9,10 @@
 	padding: 17.8rem 0 5.5rem;
 	@include box-shadow(0 0.1rem 0.2rem rgba($black, 0.5));
 	z-index: 5;
+
+	.dash-top {
+		margin-top: 15rem;
+	}
 }
 
 .site-name {
@@ -43,7 +45,7 @@
 
 // Navigation
 .navbar-default {
-	background: url('../img/asfalt-light.png') left top, url('../img/dash.png') repeat-x left 90%;
+	background: url('../img/asfalt-light.png') left top;
 	background-color: $color-nav;
 	border: none;
 	@include box-shadow(0 0.1rem 1rem rgba($black, 0.25));
@@ -173,6 +175,63 @@
 			bottom: 0;
 			margin-bottom: 0.4rem;
 		}
+	}
+}
+
+// Slideshow
+#slideshow {
+	overflow: hidden;
+	margin-bottom: 1.88em;
+
+	.slick-list {
+		@include box-shadow(0.2rem 0.2rem 0.4rem rgba($black, 0.2));
+	}
+
+	.item {
+		background-color: $color-text-light;
+		padding: 1rem 1rem 1.5rem 1rem;
+		border-radius: 0.4rem;
+
+		img {
+			width: 100%;
+		}
+
+		.slide-img-desc {
+			font-family: $font-family-extra-2;
+			font-size: 2.4rem;
+			text-transform: uppercase;
+			padding-top: 0.63em;
+		}
+	}
+
+	.slick-prev, 
+	.slick-next {
+		background-color: $color-text-light;
+		border: none;
+		border-radius: 50%;
+		font-size: 1.8rem;
+		position: absolute;
+		width: 2.78em;
+		height: 2.78em;
+		top: 50%;
+		margin-top: -1.95em;
+		padding: 0;
+
+		&:focus {
+			outline: none !important;
+		}
+	}
+
+	.slick-prev {
+		left: -2.1rem;
+		text-align: right;
+		padding-right: 1rem;
+	}
+
+	.slick-next {
+		text-align: left;
+		padding-left: 1rem;
+		right: -2.1rem;
 	}
 }
 

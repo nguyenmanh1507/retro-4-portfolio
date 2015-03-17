@@ -10,6 +10,17 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- Owl Carousel -->
+    <!-- <link rel="stylesheet" href="stylesheets/owl.theme.css">
+    <link rel="stylesheet" href="stylesheets/owl.transitions.css">
+    <link rel="stylesheet" href="stylesheets/owl.carousel.css"> -->
+
+    <!-- Slick carousel -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css"/>
+
     <link rel="stylesheet" href="stylesheets/styles.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
@@ -21,13 +32,16 @@
 
     <header id="header">
 
+      <hr class="dash-top">
+
       <div class="site-logo">
         <h1 class="site-logo-title">JD</h1>
       </div>
       <!-- /.site-logo -->
 
       <nav class="navbar navbar-default">
-        <div class="container-fluid">
+
+        <div class="containerfluid">
 
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -46,6 +60,9 @@
           </ul>
         </div>
         <!-- /.container-fluid -->
+
+        <hr class="dash-bottom">
+
       </nav>
       <!-- /.navbar navbar-default -->
 
@@ -56,8 +73,24 @@
       </div>
       <!-- /.site-description -->
 
-      <div id="slideshow-section">
-        slideshow placeholder
+      <!-- Slideshow section -->
+      <div class="container">
+        <div id="slideshow">
+   
+          <div class="item">
+            <img src="img/fullimage1.jpg" alt="The Last of us">
+            <p class="slide-img-desc">Kodak Camera</p>
+          </div>
+          <div class="item">
+            <img src="img/fullimage2.jpg" alt="GTA V">
+            <p class="slide-img-desc">Lorem ipsum dolor sit.</p>
+          </div>
+          <div class="item">
+            <img src="img/fullimage3.jpg" alt="Mirror Edge">
+            <p class="slide-img-desc">Lorem ipsum dolor.</p>
+          </div>
+         
+        </div>
       </div>
       <!-- /#slideshow-section -->
 
@@ -65,6 +98,8 @@
         "Hello, I am John Doe<span>Welcome to Retro, My wonderful Theme!"</span>
       </h2>
       <!-- /.welcome-message -->
+
+      <hr class="dash-bottom">
 
     </header>
     <!-- /#header -->
@@ -151,10 +186,11 @@
             <div class="filter-section">
               <ul class="filter-buttons">
                 <li>Filter by</li>
-                <li><a href="#" class="filter-button">design</a></li>
-                <li><a href="#" class="filter-button">logo</a></li>
-                <li><a href="#" class="filter-button">typography</a></li>
-                <li><a href="#" class="filter-button">poster</a></li>
+                <li><a href="#" class="filter-button active" data-filter="*">all</a></li>
+                <li><a href="#" class="filter-button" data-filter=".design">design</a></li>
+                <li><a href="#" class="filter-button" data-filter=".logo">logo</a></li>
+                <li><a href="#" class="filter-button" data-filter=".typo">typography</a></li>
+                <li><a href="#" class="filter-button" data-filter=".poster">poster</a></li>
               </ul>
               <!-- /.filter-buttons -->
             </div>
@@ -167,7 +203,8 @@
 
         <div class="row">
           <ul class="portfolios">
-            <li class="col-sm-6 col-md-3">
+
+            <li class="col-sm-6 col-md-3 filter-item typo">
               <figure class="portfolio">
                 <a href="#"><img src="img/portfolio-thumbnail.png" alt="porfolio"></a>
                 <figcaption>
@@ -180,6 +217,105 @@
               </figure>
               <!-- /.portfolio -->
             </li>
+
+            <li class="col-sm-6 col-md-3 filter-item logo poster">
+              <figure class="portfolio">
+                <a href="#"><img src="img/portfolio-thumbnail.png" alt="porfolio"></a>
+                <figcaption>
+                  <p class="portfolio-name">
+                    <a href="#" class="portfolio-type portfolio-type-video">portolio-type</a>
+                    <a href="#">A Vimeo reel</a>
+                  </p>
+                  <!-- /.portfolio-name -->
+                </figcaption>
+              </figure>
+              <!-- /.portfolio -->
+            </li>
+
+            <li class="col-sm-6 col-md-3 filter-item design">
+              <figure class="portfolio">
+                <a href="#"><img src="img/portfolio-thumbnail.png" alt="porfolio"></a>
+                <figcaption>
+                  <p class="portfolio-name">
+                    <a href="#" class="portfolio-type portfolio-type-sound">portolio-type</a>
+                    <a href="#">Love for old cameras</a>
+                  </p>
+                  <!-- /.portfolio-name -->
+                </figcaption>
+              </figure>
+              <!-- /.portfolio -->
+            </li>
+
+            <li class="col-sm-6 col-md-3 filter-item poster logo typo">
+              <figure class="portfolio">
+                <a href="#"><img src="img/portfolio-thumbnail.png" alt="porfolio"></a>
+                <figcaption>
+                  <p class="portfolio-name">
+                    <a href="#" class="portfolio-type portfolio-type-note">portolio-type</a>
+                    <a href="#">Detail project page</a>
+                  </p>
+                  <!-- /.portfolio-name -->
+                </figcaption>
+              </figure>
+              <!-- /.portfolio -->
+            </li>
+
+            <li class="col-sm-6 col-md-3 filter-item logo typo poster">
+              <figure class="portfolio">
+                <a href="#"><img src="img/portfolio-thumbnail.png" alt="porfolio"></a>
+                <figcaption>
+                  <p class="portfolio-name">
+                    <a href="#" class="portfolio-type portfolio-type-video">portolio-type</a>
+                    <a href="#">Youtube Video</a>
+                  </p>
+                  <!-- /.portfolio-name -->
+                </figcaption>
+              </figure>
+              <!-- /.portfolio -->
+            </li>
+
+            <li class="col-sm-6 col-md-3 filter-item design logo">
+              <figure class="portfolio">
+                <a href="#"><img src="img/portfolio-thumbnail.png" alt="porfolio"></a>
+                <figcaption>
+                  <p class="portfolio-name">
+                    <a href="#" class="portfolio-type portfolio-type-attach">portolio-type</a>
+                    <a href="#">Another external link</a>
+                  </p>
+                  <!-- /.portfolio-name -->
+                </figcaption>
+              </figure>
+              <!-- /.portfolio -->
+            </li>
+
+            <li class="col-sm-6 col-md-3 filter-item poster">
+              <figure class="portfolio">
+                <a href="#"><img src="img/portfolio-thumbnail.png" alt="porfolio"></a>
+                <figcaption>
+                  <p class="portfolio-name">
+                    <a href="#" class="portfolio-type portfolio-type-photo">portolio-type</a>
+                    <a href="#">A Lightbox image</a>
+                  </p>
+                  <!-- /.portfolio-name -->
+                </figcaption>
+              </figure>
+              <!-- /.portfolio -->
+            </li>
+
+            <li class="col-sm-6 col-md-3 filter-item typo">
+              <figure class="portfolio">
+                <a href="#"><img src="img/portfolio-thumbnail.png" alt="porfolio"></a>
+                <figcaption>
+                  <p class="portfolio-name">
+                    <a href="#" class="portfolio-type portfolio-type-sound">portolio-type</a>
+                    <a href="#">The darkest tempest</a>
+                  </p>
+                  <!-- /.portfolio-name -->
+                </figcaption>
+              </figure>
+              <!-- /.portfolio -->
+            </li>
+
           </ul>
           <!-- /.portfolios -->
 
@@ -293,7 +429,7 @@
 
         <div class="form-group">
           <label for="name" class="sr-only">Name</label>
-          <input type="text" class="form-control" name="name" id="name" placeholder="name">
+          <input type="text" class="form-control" name="name" id="name" placeholder="Name">
         </div>
 
         <div class="form-group">
@@ -316,6 +452,20 @@
       </form>
       <!-- /.contact-form -->
 
+      <div class="socials">
+
+        <p class="social-title">I am social</p>
+
+        <ul class="social-icons">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>  
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>  
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>  
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>  
+        </ul>
+
+      </div>
+      <!-- /.socials -->
+
       <hr class="dash-bottom">
 
     </section>
@@ -323,6 +473,10 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/bootstrap.js"></script>
+    <!-- <script src="js/owl.carousel.min.js"></script> -->
+    <script src="http://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+    <script src="js/isotope.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
