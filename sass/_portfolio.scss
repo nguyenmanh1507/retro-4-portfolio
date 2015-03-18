@@ -78,6 +78,8 @@
 	}
 
 	.portfolio-type {
+		background-repeat: no-repeat;
+		background-position: center;
 		display: block;
 		color: transparent;
 		height: 4.4rem;
@@ -93,7 +95,21 @@
 
 	.portfolio-type-photo {
 		background-image: url('../img/photo.png');
-		background-repeat: no-repeat;
-		background-position: center;
+	}
+
+	.portfolio-type-video {
+		background-image: url('../img/tv-small.png');
+	}
+	
+	.portfolio-type-sound {
+		background-image: url('../img/sound.png');
+	}
+
+	.portfolio-type-note {
+		background-image: url('../img/note.png');
+	}
+
+	.portfolio-type-attach {
+		background-image: url('../img/clip.png');
 	}
 }
