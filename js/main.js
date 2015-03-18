@@ -26,8 +26,6 @@ jQuery(document).ready(function($) {
 		var filterValue = $this.data('filter');
   	$container.isotope({ filter: filterValue });
 	});
-<<<<<<< HEAD
-=======
 
 	// Detect scroll for optimize fixed navbar
 	var lastScrollTop = 0;
@@ -52,5 +50,4 @@ jQuery(document).ready(function($) {
 		lastScrollTop = st;
 
 	});
->>>>>>> origin/master
 });
