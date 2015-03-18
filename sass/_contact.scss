@@ -67,10 +67,17 @@
 .socials {
 	text-align: center;
 	width: 90%;
+<<<<<<< HEAD
 
 	@media (min-width: 76.8rem) {
 		width: 48rem;
 		margin: 0 auto;
+=======
+	margin: 0 auto;
+
+	@media (min-width: 76.8rem) {
+		width: 48rem;
+>>>>>>> origin/master
 	}
 
 	.social-title {
@@ -101,6 +108,10 @@
 		li {
 			display: inline-block;
 			margin-right: 1.88em;
+<<<<<<< HEAD
+=======
+			margin-bottom: 1.88em;
+>>>>>>> origin/master
 
 			&:last-child {
 				margin: 0;
@@ -118,6 +129,13 @@
 				border: 0.2rem solid $color-text;
 				@include box-shadow(0 0 0 0.4rem $color-text-light);
 
+<<<<<<< HEAD
+=======
+				@media (max-width: 768px) {
+					font-size: 3.4rem;
+				}
+
+>>>>>>> origin/master
 				.fa {
 					color: $text-color;
 					@include transition(color 0.4s ease-out);

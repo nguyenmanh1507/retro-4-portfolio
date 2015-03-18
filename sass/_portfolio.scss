@@ -13,7 +13,12 @@
 		li {
 			display: inline-block;
 			font-size: 1.6rem;
-			margin-right: 2.4rem;
+			margin-left: 2.6rem;
+			margin-bottom: 1rem;
+
+			&:first-child {
+				margin-left: 0;
+			}
 
 			.filter-button {
 				background-color: $color-text-light;
