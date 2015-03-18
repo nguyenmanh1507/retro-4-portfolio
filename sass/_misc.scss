@@ -36,6 +36,10 @@
 	text-transform: uppercase;
 	text-shadow: 0.2rem 0.2rem 0 $color-text-light,
 							 0.4rem 0.4rem 0 $color-text;
+
+	@media (max-width: 480px) {
+		font-size: 5rem;
+	}
 }
 
 .xxx-hr {
@@ -81,6 +85,7 @@
 	text-align: center;
 	padding-top: 1rem;
 	position: relative;
+	@include transition(color .2s ease-in);
 
 	&:before {
 		background-color: $color-text;
@@ -91,5 +96,11 @@
 		top: 0;
 		left: 50%;
 		margin-left: -2rem;
+		@include transition(background-color .2s ease-in);
 	}
+}
+
+.retro-hidden {
+	// visibility: hidden !important;
+	top: -100% !important;
 }

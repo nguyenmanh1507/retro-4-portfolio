@@ -3,9 +3,37 @@
 	background-color: $color-blog;
 	@include box-shadow(0 0.1rem 0.2rem rgba($black, 0.5));
 	z-index: 3;
+
+	.browse-all:hover,
+	.browse-all:focus {
+		color: $color-portfolio;
+
+		&:before {
+			background-color: $color-portfolio;
+		}
+	}
 }
 
 .my-blog {
+	margin-bottom: 2rem;
+
+	@media (max-width: 685px) {
+		margin-bottom: 5rem;
+		text-align: center;
+
+		.my-blog-excerpt {
+			text-align: left;
+		}
+	}
+
+	a {
+		@include transition(color .2s ease-in);
+
+		&:hover,
+		&:focus {
+			color: $color-portfolio;
+		}
+	}
 
 	.my-blog-thumbnail {
 		background-color: $color-text-light;
@@ -17,6 +45,14 @@
 		padding: 0.4rem;
 		min-width: 28.9rem;
 		min-height: 21.8rem;
+
+		@media (max-width: 685px) {
+			float: none;
+
+			img {
+				width: 100%;
+			}
+		}
 
 		img {
 			max-width: 100%;
@@ -74,5 +110,11 @@
 
 	.comment-numbers {
 		float: right;
+
+		@media (max-width: 992px) {
+			display: block;
+			float: none;
+			margin-top: 0.5rem;
+		}
 	}
 }

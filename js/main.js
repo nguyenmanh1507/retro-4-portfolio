@@ -26,4 +26,28 @@ jQuery(document).ready(function($) {
 		var filterValue = $this.data('filter');
   	$container.isotope({ filter: filterValue });
 	});
+
+	// Detect scroll for optimize fixed navbar
+	var lastScrollTop = 0;
+	$(window).scroll(function(){
+
+		var $this = $(this);
+		var $navbar = $('.navbar');
+		var $siteLogo = $('.site-logo');
+		var navOffsetTop = $navbar.offset().top;
+		var st = $(this).scrollTop();
+
+		if(st > lastScrollTop) {
+			console.log('Scroll down');
+			$navbar.addClass('retro-hidden');
+			$siteLogo.addClass('retro-hidden');
+		} else {
+			console.log('Scroll up');
+			$navbar.removeClass('retro-hidden');
+			$siteLogo.removeClass('retro-hidden');
+		}
+
+		lastScrollTop = st;
+
+	});
 });

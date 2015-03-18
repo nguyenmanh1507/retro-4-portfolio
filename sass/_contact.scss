@@ -67,10 +67,10 @@
 .socials {
 	text-align: center;
 	width: 90%;
+	margin: 0 auto;
 
 	@media (min-width: 76.8rem) {
 		width: 48rem;
-		margin: 0 auto;
 	}
 
 	.social-title {
@@ -101,6 +101,7 @@
 		li {
 			display: inline-block;
 			margin-right: 1.88em;
+			margin-bottom: 1.88em;
 
 			&:last-child {
 				margin: 0;
@@ -117,6 +118,10 @@
 				border-radius: 50%;
 				border: 0.2rem solid $color-text;
 				@include box-shadow(0 0 0 0.4rem $color-text-light);
+
+				@media (max-width: 768px) {
+					font-size: 3.4rem;
+				}
 
 				.fa {
 					color: $text-color;
