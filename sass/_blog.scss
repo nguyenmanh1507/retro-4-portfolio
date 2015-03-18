@@ -46,6 +46,11 @@
 		min-width: 28.9rem;
 		min-height: 21.8rem;
 
+		@media (max-width: 29rem) {
+			min-width: 95%;
+			min-height: auto;
+		}
+
 		@media (max-width: 685px) {
 			float: none;
 
