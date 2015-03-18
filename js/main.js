@@ -13,9 +13,7 @@ jQuery(document).ready(function($) {
 
 	// Filter portfolio
 	$container = $('.portfolios');
-	$container.isotope({
-		itemSelector: '.filter-item'
-	});
+	$container.isotope('layout');
 
 	var $filterButton = $('.filter-buttons');
 
