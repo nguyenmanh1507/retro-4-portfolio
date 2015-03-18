@@ -1,3 +1,4 @@
+// My jquery code
 jQuery(document).ready(function($) {
 	// slickcarousel
 	$('#slideshow').slick({
@@ -38,11 +39,11 @@ jQuery(document).ready(function($) {
 		var st = $(this).scrollTop();
 
 		if(st > lastScrollTop) {
-			console.log('Scroll down');
+			// Scroll Down
 			$navbar.addClass('retro-hidden');
 			$siteLogo.addClass('retro-hidden');
 		} else {
-			console.log('Scroll up');
+			// Scroll Up
 			$navbar.removeClass('retro-hidden');
 			$siteLogo.removeClass('retro-hidden');
 		}

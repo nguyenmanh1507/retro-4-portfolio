@@ -18,89 +18,100 @@ $color-ribbon-bg: #fff1ce;
 // Fonts
 
 // Roboto Slab
-@font-face {
-    font-family: 'roboto_slabbold';
-    src: url('../fonts/webfont/RobotoSlab-Bold-webfont.eot');
-    src: url('../fonts/webfont/RobotoSlab-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/webfont/RobotoSlab-Bold-webfont.woff') format('woff'),
-         url('../fonts/webfont/RobotoSlab-Bold-webfont.ttf') format('truetype'),
-         url('../fonts/webfont/RobotoSlab-Bold-webfont.svg#roboto_slabbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+// @font-face {
+//     font-family: 'roboto_slabbold';
+//     src: url('../fonts/webfont/RobotoSlab-Bold-webfont.eot');
+//     src: url('../fonts/webfont/RobotoSlab-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/webfont/RobotoSlab-Bold-webfont.woff') format('woff'),
+//          url('../fonts/webfont/RobotoSlab-Bold-webfont.ttf') format('truetype'),
+//          url('../fonts/webfont/RobotoSlab-Bold-webfont.svg#roboto_slabbold') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
 
-}
+// }
 
-@font-face {
-    font-family: 'roboto_slabregular';
-    src: url('../fonts/webfont/RobotoSlab-Regular-webfont.eot');
-    src: url('../fonts/webfont/RobotoSlab-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/webfont/RobotoSlab-Regular-webfont.woff') format('woff'),
-         url('../fonts/webfont/RobotoSlab-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/webfont/RobotoSlab-Regular-webfont.svg#roboto_slabregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+// @font-face {
+//     font-family: 'roboto_slabregular';
+//     src: url('../fonts/webfont/RobotoSlab-Regular-webfont.eot');
+//     src: url('../fonts/webfont/RobotoSlab-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/webfont/RobotoSlab-Regular-webfont.woff') format('woff'),
+//          url('../fonts/webfont/RobotoSlab-Regular-webfont.ttf') format('truetype'),
+//          url('../fonts/webfont/RobotoSlab-Regular-webfont.svg#roboto_slabregular') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
 
-}
+// }
+
+@include font-face("roboto_slabregular", inline-font-files("webfont/RobotoSlab-Regular-webfont.eot", "webfont/RobotoSlab-Regular-webfont.woff", "webfont/RobotoSlab-Regular-webfont.ttf", "webfont/RobotoSlab-Regular-webfont.svg"));
+
+@include font-face("roboto_slabbold", inline-font-files("webfont/RobotoSlab-Bold-webfont.eot", "webfont/RobotoSlab-Bold-webfont.ttf", "webfont/RobotoSlab-Bold-webfont.woff", "webfont/RobotoSlab-Bold-webfont.svg"));
 
 
 // SesideResort
-@font-face {
-    font-family: 'seasideresortnfregular';
-    src: url('../fonts/webfont/SEASRN__-webfont.eot');
-    src: url('../fonts/webfont/SEASRN__-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/webfont/SEASRN__-webfont.woff') format('woff'),
-         url('../fonts/webfont/SEASRN__-webfont.ttf') format('truetype'),
-         url('../fonts/webfont/SEASRN__-webfont.svg#seasideresortnfregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+// @font-face {
+//     font-family: 'seasideresortnfregular';
+//     src: url('../fonts/webfont/SEASRN__-webfont.eot');
+//     src: url('../fonts/webfont/SEASRN__-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/webfont/SEASRN__-webfont.woff') format('woff'),
+//          url('../fonts/webfont/SEASRN__-webfont.ttf') format('truetype'),
+//          url('../fonts/webfont/SEASRN__-webfont.svg#seasideresortnfregular') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
 
-}
+// }
+
+@include font-face("seasideresortnfregular", inline-font-files("webfont/SEASRN__-webfont.eot", "webfont/SEASRN__-webfont.woff", "webfont/SEASRN__-webfont.ttf", "webfont/SEASRN__-webfont.svg"));
 
 
 // Oswaldbold
-@font-face {
-    font-family: 'oswaldbold';
-    src: url('../fonts/webfont/Oswald-Bold-webfont.eot');
-    src: url('../fonts/webfont/Oswald-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/webfont/Oswald-Bold-webfont.woff2') format('woff2'),
-         url('../fonts/webfont/Oswald-Bold-webfont.woff') format('woff'),
-         url('../fonts/webfont/Oswald-Bold-webfont.ttf') format('truetype'),
-         url('../fonts/webfont/Oswald-Bold-webfont.svg#oswaldbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+// @font-face {
+//     font-family: 'oswaldbold';
+//     src: url('../fonts/webfont/Oswald-Bold-webfont.eot');
+//     src: url('../fonts/webfont/Oswald-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/webfont/Oswald-Bold-webfont.woff2') format('woff2'),
+//          url('../fonts/webfont/Oswald-Bold-webfont.woff') format('woff'),
+//          url('../fonts/webfont/Oswald-Bold-webfont.ttf') format('truetype'),
+//          url('../fonts/webfont/Oswald-Bold-webfont.svg#oswaldbold') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
 
-}
-
-
+// }
 
 
-@font-face {
-    font-family: 'oswald_regularregular';
-    src: url('../fonts/webfont/Oswald-Regular-webfont.eot');
-    src: url('../fonts/webfont/Oswald-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/webfont/Oswald-Regular-webfont.woff2') format('woff2'),
-         url('../fonts/webfont/Oswald-Regular-webfont.woff') format('woff'),
-         url('../fonts/webfont/Oswald-Regular-webfont.ttf') format('truetype'),
-         url('../fonts/webfont/Oswald-Regular-webfont.svg#oswald_regularregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+// @font-face {
+//     font-family: 'oswald_regularregular';
+//     src: url('../fonts/webfont/Oswald-Regular-webfont.eot');
+//     src: url('../fonts/webfont/Oswald-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/webfont/Oswald-Regular-webfont.woff2') format('woff2'),
+//          url('../fonts/webfont/Oswald-Regular-webfont.woff') format('woff'),
+//          url('../fonts/webfont/Oswald-Regular-webfont.ttf') format('truetype'),
+//          url('../fonts/webfont/Oswald-Regular-webfont.svg#oswald_regularregular') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
 
-}
+// }
+
+@include font-face("oswald_regularregular", font-files("webfont/Oswald-Regular-webfont.eot", "webfont/Oswald-Regular-webfont.woff2", "webfont/Oswald-Regular-webfont.woff", "webfont/Oswald-Regular-webfont.ttf", "webfont/Oswald-Regular-webfont.svg"));
+
+@include font-face("oswaldbold", font-files("webfont/Oswald-Bold-webfont.eot", "webfont/Oswald-Bold-webfont.woff2", "webfont/Oswald-Bold-webfont.woff", "webfont/Oswald-Bold-webfont.ttf", "webfont/Oswald-Bold-webfont.svg"));
 
 
 // Bazar
-@font-face {
-    font-family: 'bazarmedium';
-    src: url('../fonts/webfont/Bazar-webfont.eot');
-    src: url('../fonts/webfont/Bazar-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/webfont/Bazar-webfont.woff2') format('woff2'),
-         url('../fonts/webfont/Bazar-webfont.woff') format('woff'),
-         url('../fonts/webfont/Bazar-webfont.ttf') format('truetype'),
-         url('../fonts/webfont/Bazar-webfont.svg#bazarmedium') format('svg');
-    font-weight: normal;
-    font-style: normal;
+// @font-face {
+//     font-family: 'bazarmedium';
+//     src: url('../fonts/webfont/Bazar-webfont.eot');
+//     src: url('../fonts/webfont/Bazar-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/webfont/Bazar-webfont.woff2') format('woff2'),
+//          url('../fonts/webfont/Bazar-webfont.woff') format('woff'),
+//          url('../fonts/webfont/Bazar-webfont.ttf') format('truetype'),
+//          url('../fonts/webfont/Bazar-webfont.svg#bazarmedium') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
 
-}
+// }
+
+
+@include font-face("bazarmedium", font-files("webfont/Bazar-webfont.eot", "webfont/Bazar-webfont.woff2", "webfont/Bazar-webfont.woff", "webfont/Bazar-webfont.ttf", "webfont/Bazar-webfont.svg"));
 
 
 // Font family
