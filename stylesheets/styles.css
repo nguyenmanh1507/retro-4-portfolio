@@ -8848,9 +8848,11 @@ a:link, a:active, a:hover, a:visited {
 }
 /* line 19, ../sass/_portfolio.scss */
 .filter-section .filter-buttons li:first-child {
+  color: #dddddd;
   margin-left: 0;
+  text-shadow: 0 1px #aaaaaa;
 }
-/* line 23, ../sass/_portfolio.scss */
+/* line 25, ../sass/_portfolio.scss */
 .filter-section .filter-buttons li .filter-button {
   background-color: #f6edd8;
   border-radius: 0 0.2rem 0.2rem 0;
@@ -8863,7 +8865,7 @@ a:link, a:active, a:hover, a:visited {
   padding: 0 0.6rem;
   position: relative;
 }
-/* line 33, ../sass/_portfolio.scss */
+/* line 35, ../sass/_portfolio.scss */
 .filter-section .filter-buttons li .filter-button:before {
   content: '';
   height: 0;
@@ -8875,7 +8877,7 @@ a:link, a:active, a:hover, a:visited {
   right: 100%;
   top: 0;
 }
-/* line 45, ../sass/_portfolio.scss */
+/* line 47, ../sass/_portfolio.scss */
 .filter-section .filter-buttons li .filter-button:after {
   content: '';
   background-color: #383a3c;
@@ -8889,11 +8891,11 @@ a:link, a:active, a:hover, a:visited {
   margin-left: -0.2rem;
 }
 
-/* line 62, ../sass/_portfolio.scss */
+/* line 64, ../sass/_portfolio.scss */
 .portfolios {
   text-align: center;
 }
-/* line 65, ../sass/_portfolio.scss */
+/* line 67, ../sass/_portfolio.scss */
 .portfolios .portfolio {
   background-color: #f6edd8;
   border-radius: 0.4rem;
@@ -8903,19 +8905,19 @@ a:link, a:active, a:hover, a:visited {
   padding: 0.5rem 0.5rem 1.5rem 0.5rem;
   margin-top: 2rem;
 }
-/* line 72, ../sass/_portfolio.scss */
+/* line 74, ../sass/_portfolio.scss */
 .portfolios .portfolio > a > img {
   display: block;
   width: 100%;
 }
-/* line 78, ../sass/_portfolio.scss */
+/* line 80, ../sass/_portfolio.scss */
 .portfolios .portfolio-name {
   font-size: 1.6rem;
   font-weight: bold;
   position: relative;
   padding-top: 3.2rem;
 }
-/* line 85, ../sass/_portfolio.scss */
+/* line 87, ../sass/_portfolio.scss */
 .portfolios .portfolio-type {
   background-repeat: no-repeat;
   background-position: center;
@@ -8931,23 +8933,23 @@ a:link, a:active, a:hover, a:visited {
   margin-left: -2.2rem;
   margin-top: -1.4rem;
 }
-/* line 101, ../sass/_portfolio.scss */
+/* line 103, ../sass/_portfolio.scss */
 .portfolios .portfolio-type-photo {
   background-image: url("../img/photo.png");
 }
-/* line 105, ../sass/_portfolio.scss */
+/* line 107, ../sass/_portfolio.scss */
 .portfolios .portfolio-type-video {
   background-image: url("../img/tv-small.png");
 }
-/* line 109, ../sass/_portfolio.scss */
+/* line 111, ../sass/_portfolio.scss */
 .portfolios .portfolio-type-sound {
   background-image: url("../img/sound.png");
 }
-/* line 113, ../sass/_portfolio.scss */
+/* line 115, ../sass/_portfolio.scss */
 .portfolios .portfolio-type-note {
   background-image: url("../img/note.png");
 }
-/* line 117, ../sass/_portfolio.scss */
+/* line 119, ../sass/_portfolio.scss */
 .portfolios .portfolio-type-attach {
   background-image: url("../img/clip.png");
 }
