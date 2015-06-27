@@ -1,0 +1,31 @@
+{
+  "name": "retro-4-portfolio",
+  "version": "1.0.0",
+  "description": "Retro Portfolio",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyenmanh1507/retro-4-portfolio.git"
+  },
+  "keywords": [
+    "Retro",
+    "bootstrap",
+    "portfolio"
+  ],
+  "author": "nguyenmanh1507",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nguyenmanh1507/retro-4-portfolio/issues"
+  },
+  "homepage": "https://github.com/nguyenmanh1507/retro-4-portfolio#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browser-sync": "^2.1.3"
+  }
+}
